@@ -21,9 +21,10 @@ def make_scad(**kwargs):
     #oomp_mode = "oobb"
 
     if typ == "all":
-        filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr", "laser", "true"]
+        filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr"]; oomp_run = True
+        #filter = ""; save_type = "all"; navigation = True; overwrite = True; modes = ["3dpr", "laser", "true"]
     elif typ == "fast":
-        filter = ""; save_type = "none"; navigation = False; overwrite = True; modes = ["3dpr"]
+        filter = ""; save_type = "none"; navigation = False; overwrite = True; modes = ["3dpr"]; oomp_run = False
     elif typ == "manual":
     #filter
         filter = ""
@@ -45,6 +46,10 @@ def make_scad(**kwargs):
         modes = ["3dpr"]
         #modes = ["laser"]        
 
+    #oomp_run
+        oomp_run = True
+        #oomp_run = False 
+
     #adding to kwargs
     kwargs["filter"] = filter
     kwargs["save_type"] = save_type
@@ -52,6 +57,7 @@ def make_scad(**kwargs):
     kwargs["overwrite"] = overwrite
     kwargs["modes"] = modes
     kwargs["oomp_mode"] = oomp_mode
+    kwargs["oomp_run"] = oomp_run
     
        
     # project_variables
