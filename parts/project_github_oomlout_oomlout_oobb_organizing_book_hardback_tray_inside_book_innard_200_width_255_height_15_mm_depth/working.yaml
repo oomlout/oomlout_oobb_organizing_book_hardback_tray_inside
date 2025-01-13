@@ -1,0 +1,41 @@
+classification: project
+color: oomlout_oobb_organizing_book_hardback_tray_inside
+description_extra: ''
+description_main: book_innard_200_width_255_height_15_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_oobb_organizing_book_hardback_tray_inside_book_innard_200_width_255_height_15_mm_depth
+id_oobb: oobb_part_oomlout_oobb_organizing_book_hardback_tray_inside_book_innard_200_width_255_height_15_mm_depth
+kwargs:
+  filter: ''
+  height: 255
+  modes:
+  - 3dpr
+  - laser
+  - 'true'
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_oobb_organizing_book_hardback_tray_inside
+  oomp_description_extra: ''
+  oomp_description_main: book_innard_200_width_255_height_15_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 15
+  type: oomlout_oobb_organizing_book_hardback_tray_inside_book_innard
+  width: 200
+manufacturer: ''
+name: book_innard
+part_number: ''
+project_name: C:\gh\oomlout_oobb_organizing_book_hardback_tray_inside
+size: oomlout
+type: github
