@@ -3688,42 +3688,6 @@ thing:
       - 0
       type: rotation
       typetype: n
-  - - height: 255
-      pos:
-      - -250.0
-      - 0
-      - -250.0
-      shape: cube
-      size:
-      - 500
-      - 500
-      - 500
-      type: negative
-      width: 200
-    - height: 255
-      pos:
-      - -250.0
-      - 0
-      - -250.0
-      shape: cube
-      size:
-      - 500
-      - 500
-      - 500
-      type: negative
-      width: 200
-    - height: 255
-      pos:
-      - -250.0
-      - 0
-      - -250.0
-      shape: cube
-      size:
-      - 500
-      - 500
-      - 500
-      type: negative
-      width: 200
   components_objects:
   - filter: ''
     height: 255
@@ -3923,32 +3887,6 @@ thing:
     thickness: 15
     type: n
     width: 200
-  - filter: ''
-    height: 255
-    modes:
-    - 3dpr
-    - laser
-    - 'true'
-    navigation: true
-    oomp_classification: project
-    oomp_color: oomlout_oobb_organizing_book_hardback_tray_inside
-    oomp_description_extra: ''
-    oomp_description_main: ''
-    oomp_manufacturer: ''
-    oomp_mode: project
-    oomp_part_number: ''
-    oomp_size: oomlout
-    oomp_type: github
-    overwrite: true
-    pos:
-    - -250.0
-    - 0
-    - -250.0
-    save_type: all
-    shape: oobb_slice
-    thickness: 15
-    type: n
-    width: 200
   components_string:
   - oobb_cube_shape_positive_type_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_200_width_255_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color_190_245_15_size
   - oobb_plate_shape_negative_type_15_depth_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_12_width_16_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color
@@ -3956,7 +3894,6 @@ thing:
   - oobb_screw_countersunk_shape_n_type_m3_radius_name_18_depth_91.0_-118.5_-3_pos_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_200_width_255_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color_true_nut_true_overhang_0_180_0_rot
   - oobb_screw_countersunk_shape_n_type_m3_radius_name_18_depth_-91.0_118.5_-3_pos_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_200_width_255_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color_true_nut_true_overhang_0_180_0_rot
   - oobb_screw_countersunk_shape_n_type_m3_radius_name_18_depth_91.0_118.5_-3_pos_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_200_width_255_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color_true_nut_true_overhang_0_180_0_rot
-  - oobb_slice_shape_n_type_-250.0_0_-250.0_pos_all_save_type_true_navigation_true_overwrite_'3dpr'_'laser'_'true'_modes_project_oomp_mode_200_width_255_height_15_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_book_hardback_tray_inside_oomp_color
   description: oomlout oobb organizing book hardback tray inside book innard 200x255x15
   description_extra: ''
   description_main: 200_width_255_height_15_mm_depth
