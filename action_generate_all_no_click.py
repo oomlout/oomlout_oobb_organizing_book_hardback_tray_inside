@@ -46,8 +46,12 @@ def main(**kwargs):
 
 
 
-
-
+    #push to git
+    if True:
+        directory_current = os.getcwd()
+        git_commit_in_one_line = f"cd {directory_current} && git add . && git commit -m 'auto commit' && git push"
+        os.system(f"{git_commit_in_one_line}")
+        
 
 if __name__ == '__main__':
     kwargs = {}
