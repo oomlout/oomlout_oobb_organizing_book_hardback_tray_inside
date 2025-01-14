@@ -12,10 +12,13 @@ def main(**kwargs):
 def make_scad(**kwargs):
     parts = []
 
-    #setup    
-    typ = "all"
-    #typ = "fast"
-    #typ = "manual"
+    typ = kwargs.get("typ", "")
+
+    if typ == "":
+        #setup    
+        typ = "all"
+        #typ = "fast"
+        #typ = "manual"
 
     oomp_mode = "project"
     #oomp_mode = "oobb"
@@ -201,14 +204,15 @@ def get_book_innard(thing, **kwargs):
     pos = kwargs.get("pos", [0, 0, 0])
     
     inset_page = 5
-    minimum_border = 3
+    minimum_border_hei = 3
+    minimum_border_wid = 6
 
 
     #add plate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "positive"
     p3["shape"] = f"oobb_cube"    
-    wid = width - inset_page * 2
+    wid = width - inset_page * 3
     hei = height - inset_page * 2
     dep = depth
     size = [wid, hei, dep]
@@ -220,18 +224,21 @@ def get_book_innard(thing, **kwargs):
     
     # add inner cutout
     width_oobb = wid // 15
-    if width_oobb % 2 == 1:
-        width_oobb += -1
     height_oobb = hei // 15
-    if height_oobb % 2 == 1:
-        height_oobb += -1
+    #make even
+    if False:
+        if width_oobb % 2 == 1:
+            width_oobb += -1
+        
+        if height_oobb % 2 == 1:
+            height_oobb += -1
     border_wid = wid - width_oobb * 15
     border_hei = hei - height_oobb * 15
-    if border_wid < minimum_border:
-        width_oobb += -2
+    if border_wid < minimum_border_wid:
+        width_oobb += -1
         border_side = wid - width_oobb * 15
-    if border_hei < minimum_border:
-        height_oobb += -2
+    if border_hei < minimum_border_hei:
+        height_oobb += -1
         border_side = hei - height_oobb * 15
 
     print(f"border: {border_wid} x {border_hei}")
@@ -251,13 +258,15 @@ def get_book_innard(thing, **kwargs):
 
     #add m3 holes 
     inset_hole = 4
+    inset_nut = 3
     depth_extra_screw = 3
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n"
     p3["shape"] = f"oobb_screw_countersunk"
     p3["radius_name"] = "m3"
-    p3["depth"] = depth + depth_extra_screw
+    p3["depth"] = depth + depth_extra_screw - inset_nut
     p3["nut"] = True
+    p3["clearance"] = "bottom"
     p3["overhang"] = True
     p3["m"] = "#"
     pos1 = copy.deepcopy(pos)
