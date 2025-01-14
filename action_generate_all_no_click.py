@@ -1,6 +1,7 @@
 import copy
 import os
 import sys
+import subprocess
 
 def main(**kwargs):
     #tun working
@@ -49,8 +50,11 @@ def main(**kwargs):
     #push to git
     if True:
         directory_current = os.getcwd()
-        git_commit_in_one_line = f"cd {directory_current} && git add . && git commit -m 'auto commit' && git push"
-        os.system(f"{git_commit_in_one_line}")
+        git_command = f"cd {directory_current} && git add . && git commit -m 'auto commit' && git push".format(directory_current)
+        print(f"git_command: {git_command}")
+        os.system(git_command)
+
+
         
 
 if __name__ == '__main__':
