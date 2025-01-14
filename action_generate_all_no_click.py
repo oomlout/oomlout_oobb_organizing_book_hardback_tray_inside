@@ -50,7 +50,7 @@ def main(**kwargs):
     #push to git
     if True:
         directory_current = os.getcwd()
-        git_command = f"cd {directory_current}&git add *&git commit -m 'auto commit'&git push".format(directory_current)
+        git_command = f'cd {directory_current}&git add *&git commit -m "auto commit"&git push'
         print(f"git_command: {git_command}")
         os.system(git_command) #
 
